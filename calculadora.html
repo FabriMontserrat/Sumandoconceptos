@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Be Vietnam" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescalcu.css" />
+    <script type="text/javascript" src="calculadora.js"></script>
     <title>HTML + CSS + JS</title>
 </head>
 
@@ -36,22 +38,36 @@
     </header> <!--Fin Header-->
 
     <main>
-        <div class="center">
-            <div>
-                <img class="logomain" src="img/main.png" alt="Programacion">
+        <div class="calculadora">
+            <div class="Ingreso">
+                <div>
+                    <p>Ingrese el primer primer numero:</p>
+                    <input class="campo" type="number" id="primerNumeroId">
+                </div>
+                <div>
+                    <p>Ingrese el primer segundo Numero:</p>
+                    <input class="campo" type="number" id="segundoNumeroId">
+                </div>
             </div>
-            <div class="centertxt">
-                <div>
-                    <h1>Bienvenidos a mi pagina web</h1>
+
+            <div>
+                <div class="navmain">
+                    <a class="btncalcu" onclick="sumar()">Sumar</a>
+                    <a class="btncalcu" onclick="restar()">Restar</a>
+                    <a class="btncalcu" onclick="dividir()">Dividir</a>
+                    <a class="btncalcu" onclick="multiplicar()">Multiplicar</a>
                 </div>
-                <div>
-                    <h3>Esta web esta dedicada a combinar mis conocimientos en HTML con CSS y javascript</h3>
-                </div>
+            </div>
+
+            <div class="resultado">
+                <p>resultado:</p>
+                <input class="campo" type="text" id="resultadoId" readonly>
             </div>
         </div>
-        
+
+
         <div class="navmain">
-            <a class="btn" href="calculadora.html">Calculadora</a>
+            <a class="btn" href="index.html">Volver</a>
             <a class="btn" href="">Proximamente</a>
             <a class="btn" href="">Proximamente</a>
             <a class="btn" href="">Proximamente</a>

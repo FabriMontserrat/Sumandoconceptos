@@ -1,0 +1,48 @@
+.Ingreso{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.calculadora{
+    background-color: rgb(252, 242, 228);
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.btncalcu {
+    margin: 2%;
+    width: 80px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    background-color:blue;
+    text-align: center;
+    color:white;
+}
+
+.btncalcu:hover{
+    background-color:darkblue;
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo{
+    width: 250px;
+    height: 20px;
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+}
+
+@media (max-width:650px){
+    .campo{
+        width: 180px;
+    }
+}

@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoimg{
+    height: 80px;
+}
+
+.nav{
+    display: flex;
+    align-items:center ;
+}
+
+header ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+header li {
+    display: inline-block;
+    text-align: center;
+    width: 8em;
+}
+
+header li a{
+    text-decoration: none;
+    color: black;   
+}
+
+header li a:hover{
+    text-decoration: none;
+    color: grey;   
+}
+
+/*FIN HEADER*/
+
+/*MAIN*/
+
+main h1{
+    font-size: 3.5em;
+}
+
+main h3{
+    font-size: 1.5em;
+}
+
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(252, 242, 228);
+}
+
+.logomain{
+    width: 100%;
+    max-width: 540px;
+}
+
+.centertxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navmain{
+    display:flex ;
+    justify-content: space-evenly;
+}
+
+.btn {
+    margin: 2%;
+    width: 100px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    color:white;
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+/*FIN MAIN*/
+
+/*FOOTER*/
+
+/*FIN FOOTER*/
+
+@media (max-width:650px){
+
+    .centertxt{
+        font-size: x-small;
+    }
+
+    .navmain{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
+}
